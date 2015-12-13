@@ -60,13 +60,15 @@ public final class R {
         public static final int word_separators=0x7f07000a;
     }
     public static final class xml {
-        public static final int geez=0x7f040000;
-        public static final int geez_shift=0x7f040001;
-        public static final int ime_preferences=0x7f040002;
-        public static final int method=0x7f040003;
-        public static final int popup_keys=0x7f040004;
-        public static final int qwerty=0x7f040005;
-        public static final int symbols=0x7f040006;
-        public static final int symbols_shift=0x7f040007;
+        public static final int button_border=0x7f040000;
+        public static final int geez=0x7f040001;
+        public static final int geez_shift=0x7f040002;
+        public static final int ime_preferences=0x7f040003;
+        public static final int keyboard_border=0x7f040004;
+        public static final int method=0x7f040005;
+        public static final int popup_keys=0x7f040006;
+        public static final int qwerty=0x7f040007;
+        public static final int symbols=0x7f040008;
+        public static final int symbols_shift=0x7f040009;
     }
 }

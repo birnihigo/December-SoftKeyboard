@@ -28,6 +28,7 @@ import android.inputmethodservice.KeyboardView;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -72,11 +73,13 @@ public class LatinKeyboardView extends KeyboardView {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(
                 Context.LAYOUT_INFLATER_SERVICE);
         //View parent = inflater.inflate(key.popupResId, null);
+
         View view = inflater.inflate(R.layout.popup_dialog, null);
         mPopupWindow = new PopupWindow();
         mPopupWindow.setContentView(view);
         mPopupWindow.setBackgroundDrawable(new BitmapDrawable());
         mPopupWindow.setOutsideTouchable(true);
+        //mPopupWindow.setWidth(400);
         //mPopupWindow.setFocusable(true);
 
         //initialize the array
@@ -92,6 +95,7 @@ public class LatinKeyboardView extends KeyboardView {
 
         for(int i = 0; i < 6; ++i) {
             mKeyVariants[i].setText(String.valueOf(chars.charAt(i)));
+            mKeyVariants[i].setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20.0f);
 
             final int index = i;
             mKeyVariants[i].setOnClickListener(new OnClickListener() {
@@ -110,12 +114,18 @@ public class LatinKeyboardView extends KeyboardView {
             getOnKeyboardActionListener().onKey(KEYCODE_OPTIONS, null);
             return true;
         } else {
+            LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(
+                    Context.LAYOUT_INFLATER_SERVICE);
+            //View parent = inflater.inflate(key.popupResId, null);
+
+            //String label = currentKey.getText().toString();
             if(key.popupCharacters == null){
                 return super.onLongPress(key);
             }
             initPopup(key.popupCharacters);
-            mPopupWindow.showAtLocation(this, Gravity.TOP, 10, 10);
-            mPopupWindow.update(key.x, key.y, 400, 80);
+            mPopupWindow.showAtLocation(this, Gravity.TOP, 0, 0);
+
+            mPopupWindow.update(key.x, key.y, 6 * key.width, key.height);
             return true;
         }
     }
