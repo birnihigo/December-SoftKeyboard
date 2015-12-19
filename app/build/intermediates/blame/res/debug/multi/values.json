@@ -103,8 +103,8 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 481,
-                    "endColumn": 59,
-                    "endOffset": 536
+                    "endColumn": 55,
+                    "endOffset": 532
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml",
@@ -112,8 +112,8 @@
                         "startLine": 21,
                         "startColumn": 4,
                         "startOffset": 773,
-                        "endColumn": 59,
-                        "endOffset": 828
+                        "endColumn": 55,
+                        "endOffset": 824
                     }
                 }
             },
@@ -121,9 +121,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 541,
+                    "startOffset": 537,
                     "endColumn": 43,
-                    "endOffset": 580
+                    "endOffset": 576
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -133,9 +133,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 585,
+                    "startOffset": 581,
                     "endColumn": 47,
-                    "endOffset": 628
+                    "endOffset": 624
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -145,9 +145,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 633,
+                    "startOffset": 629,
                     "endColumn": 47,
-                    "endOffset": 676
+                    "endOffset": 672
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -157,9 +157,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 681,
+                    "startOffset": 677,
                     "endColumn": 60,
-                    "endOffset": 737
+                    "endOffset": 733
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -169,21 +169,28 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 742,
-                    "endColumn": 52,
-                    "endOffset": 790
+                    "startOffset": 738,
+                    "endColumn": 64,
+                    "endOffset": 798
                 },
                 "from": {
-                    "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1253,
+                        "endColumn": 64,
+                        "endOffset": 1313
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 795,
+                    "startOffset": 803,
                     "endColumn": 68,
-                    "endOffset": 859
+                    "endOffset": 867
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -193,9 +200,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 864,
+                    "startOffset": 872,
                     "endColumn": 66,
-                    "endOffset": 926
+                    "endOffset": 934
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"
@@ -205,18 +212,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 931,
-                    "endColumn": 73,
-                    "endOffset": 1000
+                    "startOffset": 939,
+                    "endColumn": 69,
+                    "endOffset": 1004
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 1372,
-                        "endColumn": 73,
-                        "endOffset": 1441
+                        "startOffset": 1418,
+                        "endColumn": 69,
+                        "endOffset": 1483
                     }
                 }
             },
@@ -224,9 +231,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1005,
+                    "startOffset": 1009,
                     "endColumn": 82,
-                    "endOffset": 1083
+                    "endOffset": 1087
                 },
                 "from": {
                     "file": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\values\\strings.xml"

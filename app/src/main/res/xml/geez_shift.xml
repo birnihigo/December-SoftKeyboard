@@ -23,52 +23,65 @@
         <Key android:codes="4974" android:keyLabel="\u136E"/>
         <Key android:codes="4975" android:keyLabel="\u136F"/>
         <Key android:codes="4976" android:keyLabel="\u1370"/>
-        <Key android:codes="4977" android:keyLabel="\u1371" 
+        <Key android:codes="4977" android:keyLabel="\u1371"/>
+        <Key android:codes="4987" android:keyLabel="\u137B"
             android:keyWidth="10%p" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row>
-        <Key android:codes="4904" android:keyLabel="\u1328" android:keyEdgeFlags="left"/>
-        <Key android:codes="4816" android:keyLabel="\u12D0"/>
-        <Key android:codes="4944" android:keyLabel="\u1350"/>
-        <Key android:codes="4712" android:keyLabel="\u1268" />
-        <Key android:codes="4912" android:keyLabel="\u1330"/>
-        <Key android:codes="4624" android:keyLabel="\u1210"/>
-        <Key android:codes="4864" android:keyLabel="\u1300"/>
-        <Key android:codes="4832" android:keyLabel="\u12E0" android:keyEdgeFlags="right"/>
+        <Key android:codes="4624" android:keyLabel="\u1210" android:keyEdgeFlags="left"
+            android:popupCharacters="\u1211\u1212\u1213\u1214\u1215\u1216"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4816" android:keyLabel="\u12D0"
+            android:popupCharacters="\u12D1\u12D2\u12D3\u12D4\u12D5\u12D6"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4792" android:keyLabel="\u12B8"
+            android:popupCharacters="\u12B9\u12BA\u12BB\u12BC\u12BD\u12BE"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4688" android:keyLabel="\u1250"
+            android:popupCharacters="\u1251\u1252\u1253\u1254\u1255\u1256"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4920" android:keyLabel="\u1338"
+            android:popupCharacters="\u1339\u133A\u133B\u133C\u133D\u133E"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4736" android:keyLabel="\u1280"
+            android:popupCharacters="\u1281\u1282\u1283\u1284\u1285\u1286"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4640" android:keyLabel="\u1220"
+            android:popupCharacters="\u1221\u1222\u1223\u1224\u1225\u1226"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4944" android:keyLabel="\u1350"
+            android:popupCharacters="\u1351\u1352\u1353\u1354\u1355\u1356"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4832" android:keyLabel="\u12E0"
+            android:popupCharacters="\u12E1\u12E2\u12E3\u12E4\u12E5\u12E6"
+            android:popupKeyboard="@xml/popup_keys"/>
+        <Key android:codes="4683" android:keyLabel="\u124B" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row>
         <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift"
-                android:keyWidth="15%p" android:isModifier="true"
+                android:keyWidth="20%p" android:isModifier="true"
                 android:isSticky="true" android:keyEdgeFlags="left"/>
-        <Key android:codes="4736" android:keyLabel="\u1280"/>
-        <Key android:codes="4640" android:keyLabel="\u1220"/>
-        <Key android:codes="4688" android:keyLabel="\u1250"/>
-        <Key android:codes="4683" android:keyLabel="\u124B"/>
+        <Key android:codes="4943" android:keyLabel="\u134F"/>
+        <Key android:codes="4803" android:keyLabel="\u12C3"/>
         <Key android:codes="4883" android:keyLabel="\u1313"/>
-        <Key android:codes="4639" android:keyLabel="\u121F"/>     
+        <Key android:codes="4639" android:keyLabel="\u121F"/>
+        <Key android:codes="4903" android:keyLabel="\u1327" />
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
-                android:keyWidth="15%p" android:keyEdgeFlags="right"
+                android:keyWidth="20%p" android:keyEdgeFlags="right"
                 android:isRepeatable="true"/>
     </Row>
     
     <Row  android:rowEdgeFlags="bottom">
-        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done"
-                android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="15%p" />
-        <Key android:codes="4964" android:keyLabel="\u1364" />
-        <!--
-            android:codes: -101 is not a framework-defined key code but a key code that is
-            privately defined in com.example.android.softkeyboard.LatinKeyboardView.
-        -->
         <Key android:codes="-101" android:keyIcon="@drawable/sym_keyboard_language_switch"
-                android:keyWidth="10%p" />
-        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="30%p" 
+            android:keyWidth="10%p"/>
+        <Key android:codes="4964" android:keyLabel="\u1364" />
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="30%p"
                 android:isRepeatable="true"/>
         <Key android:codes="4966" android:keyLabel="\u1366" />
         <Key android:codes="8220" android:keyLabel="\u201C" />
-        <Key android:codes="46" android:keyLabel="." />
         <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
                 android:keyWidth="15%p" android:keyEdgeFlags="right"
                 />

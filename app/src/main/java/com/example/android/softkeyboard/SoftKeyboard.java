@@ -23,6 +23,7 @@ import android.inputmethodservice.KeyboardView;
 import android.os.IBinder;
 import android.text.InputType;
 import android.text.method.MetaKeyKeyListener;
+import android.util.Log;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
@@ -76,6 +77,9 @@ public class SoftKeyboard extends InputMethodService
     private LatinKeyboard mQwertyKeyboard;
     private LatinKeyboard mGeezKeyboard;
     private LatinKeyboard mGeezShiftedKeyboard;
+    private static final int KEYCODE_BACKSPACE = -5;
+    private static final int KEYCODE_SPACE = 32;
+
     
     private LatinKeyboard mCurKeyboard;
     
@@ -122,7 +126,8 @@ public class SoftKeyboard extends InputMethodService
         mInputView = (LatinKeyboardView) getLayoutInflater().inflate(
                 R.layout.input, null);
         mInputView.setOnKeyboardActionListener(this);
-        setLatinKeyboard(mQwertyKeyboard);
+        //setLatinKeyboard(mQwertyKeyboard);
+        setLatinKeyboard(mGeezKeyboard);
         return mInputView;
     }
 
@@ -187,7 +192,8 @@ public class SoftKeyboard extends InputMethodService
                 // normal alphabetic keyboard, and assume that we should
                 // be doing predictive text (showing candidates as the
                 // user types).
-                mCurKeyboard = mQwertyKeyboard;
+                //mCurKeyboard = mQwertyKeyboard;
+                mCurKeyboard = mGeezKeyboard;
                 mPredictionOn = true;
                 
                 // We now look for a few special variations of text that will
@@ -227,7 +233,8 @@ public class SoftKeyboard extends InputMethodService
             default:
                 // For all unknown input types, default to the alphabetic
                 // keyboard with no special features.
-                mCurKeyboard = mQwertyKeyboard;
+                //mCurKeyboard = mQwertyKeyboard;
+                mCurKeyboard = mGeezKeyboard;
                 updateShiftKeyState(attribute);
         }
         
@@ -253,7 +260,8 @@ public class SoftKeyboard extends InputMethodService
         // its window.
         setCandidatesViewShown(false);
         
-        mCurKeyboard = mQwertyKeyboard;
+        //mCurKeyboard = mQwertyKeyboard;
+        mCurKeyboard = mGeezKeyboard;
         if (mInputView != null) {
             mInputView.closing();
         }
@@ -389,6 +397,7 @@ public class SoftKeyboard extends InputMethodService
                 return false;
                 
             default:
+
                 // For all other keys, if we want to do transformations on
                 // text being entered with a hard keyboard, we need to process
                 // it and do the appropriate action.
@@ -633,6 +642,11 @@ public class SoftKeyboard extends InputMethodService
     }
     
     private void handleCharacter(int primaryCode, int[] keyCodes) {
+        //The Geez punctuation marks need special treatment
+        //Just add space before them
+        if(primaryCode == 4962 || primaryCode == 4963 || primaryCode == 4964 || primaryCode == 4966 || primaryCode == 8220){
+            onKey(KEYCODE_SPACE, null);
+        }
         if (isInputViewShown()) {
             if (mInputView.isShifted()) {
                 primaryCode = Character.toUpperCase(primaryCode);

@@ -8,12 +8,12 @@
         "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\popup_keys.xml"
     },
     {
-        "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\geez.xml",
-        "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\geez.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\keyboard_border.xml",
         "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\keyboard_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\geez.xml",
+        "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\geez.xml"
     },
     {
         "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\geez_shift.xml",
@@ -26,6 +26,10 @@
     {
         "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\symbols_shift.xml",
         "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\symbols_shift.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\geez2.xml",
+        "source": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\src\\main\\res\\xml\\geez2.xml"
     },
     {
         "merged": "C:\\Users\\user\\Downloads\\December-SoftKeyboard1\\app\\build\\intermediates\\res\\merged\\debug\\xml\\ime_preferences.xml",

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** This is the keyboard for Geez characters
+*/
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+    <Row>
+        <Key android:codes="49" android:keyLabel="1" android:keyEdgeFlags="left"/>
+        <Key android:codes="50" android:keyLabel="2"/>
+        <Key android:codes="51" android:keyLabel="3"/>
+        <Key android:codes="52" android:keyLabel="4"/>
+        <Key android:codes="53" android:keyLabel="5"/>
+        <Key android:codes="54" android:keyLabel="6"/>
+        <Key android:codes="55" android:keyLabel="7"/>
+        <Key android:codes="56" android:keyLabel="8"/>
+        <Key android:codes="57" android:keyLabel="9"/>
+        <Key android:codes="48" android:keyLabel="0" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="4708" android:keyLabel="\u1200" android:keyEdgeFlags="left"/>
+        <Key android:codes="4616" android:keyLabel="\u1208"/>
+        <Key android:codes="4632" android:keyLabel="\u1218"/>
+        <Key android:codes="4648" android:keyLabel="\u1228"/>
+        <Key android:codes="4656" android:keyLabel="\u1230"/>
+        <Key android:codes="4664" android:keyLabel="\u1238" />
+        <Key android:codes="4672" android:keyLabel="\u1240" />
+        <Key android:codes="4704" android:keyLabel="\u1260" />
+        <Key android:codes="4712" android:keyLabel="\u1268" />
+        <Key android:codes="4936" android:keyLabel="\u1348" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="4768" android:keyLabel="\u12A0" android:keyEdgeFlags="left"/>
+        <Key android:codes="4776" android:keyLabel="\u12A8"/>
+        <Key android:codes="4720" android:keyLabel="\u1270"/>
+        <Key android:codes="4728" android:keyLabel="\u1278"/>
+        <Key android:codes="4752" android:keyLabel="\u1290"/>
+        <Key android:codes="4760" android:keyLabel="\u1298" />
+        <Key android:codes="4808" android:keyLabel="\u12C8"/>
+        <Key android:codes="4824" android:keyLabel="\u12D8"/>
+        <Key android:codes="4840" android:keyLabel="\u12E8"/>
+        <Key android:codes="4928" android:keyLabel="\u1340" android:keyEdgeFlags="right"/>
+
+
+
+
+        <Key android:codes="4936" android:keyLabel="\u1348"/>
+
+
+
+
+
+
+
+    </Row>
+
+    <Row android:keyWidth="12%p">
+        <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift"
+            android:keyWidth="15%p" android:isModifier="true"
+            android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="4872" android:keyLabel="\u1308" />
+        <Key android:codes="4896" android:keyLabel="\u1320"/>
+        <Key android:codes="4904" android:keyLabel="\u1328"/>
+        <Key android:codes="4848" android:keyLabel="\u12F0"/>
+        <Key android:codes="4864" android:keyLabel="\u1300"/>
+        <Key android:codes="4912" android:keyLabel="\u1330"/>
+
+
+        <Key android:codes="4664" android:keyLabel="\u1238" />
+        <Key android:codes="4632" android:keyLabel="\u1218"/>
+
+
+
+
+        <Key android:codes="4672" android:keyLabel="\u1240"/>
+
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+            android:keyWidth="15%p" android:keyEdgeFlags="right"
+            android:isRepeatable="true"/>
+    </Row>
+
+    <Row  android:keyWidth="12%p" android:rowEdgeFlags="bottom">
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done"
+            android:keyWidth="10%p" android:keyEdgeFlags="left" />
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="15%p" />
+        <Key android:codes="4961" android:keyLabel="\u1361" />
+        <!--
+            android:codes: -101 is not a framework-defined key code but a key code that is
+            privately defined in com.example.android.softkeyboard.LatinKeyboardView.
+         -->
+        <Key android:codes="-101" android:keyIcon="@drawable/sym_keyboard_language_switch"
+            android:keyWidth="10%p" />
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="20%p"
+            android:isRepeatable="true"/>
+        <Key android:codes="4963" android:keyLabel="\u1363"/>
+        <Key android:codes="4962" android:keyLabel="\u1362" />
+        <Key android:codes="63" android:keyLabel="\?" />
+        <!--  <Key android:codes="4832" android:keyLabel="\u12E0" />  -->
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+            android:keyWidth="15%p" android:keyEdgeFlags="right"
+            />
+    </Row>
+</Keyboard>

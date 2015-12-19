@@ -133,7 +133,7 @@ public class LatinKeyboardView extends KeyboardView {
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     void setSubtypeOnSpaceKey(final InputMethodSubtype subtype) {
         final LatinKeyboard keyboard = (LatinKeyboard)getKeyboard();
-        keyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
+        //keyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
         invalidateAllKeys();
     }
 }
